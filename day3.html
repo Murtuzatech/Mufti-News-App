@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mufti News App</title>
+    <link rel="stylesheet" href="day3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">xe
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Mufti News</h1>
+                <nav class="nav">
+                    <button class="nav-btn" onclick="getNews('general')">Home</button>
+                    <button class="nav-btn" onclick="getNews('sport')">Sports</button>
+                    <button class="nav-btn" onclick="getNews('technology')">Tech</button>
+                    <button class="nav-btn" onclick="getNews('health')">Health</button>
+                    <button class="nav-btn" onclick="getNews('business')">Business</button>
+                    <button class="nav-btn" onclick="getNews('science')">Science</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h2 class="hero-title">Stay Updated With The Latest News Worldwide</h2>
+                <div class="search-section">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search for news...">
+                        <button onclick="handleSearch()" class="search-btn">Search</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news-section">
+                <div id="news" class="news-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mufti News API | Developed By Murtuza Husain</p>
+        </div>
+    </footer>
+
+    <script src="day3.js"></script>
+</body>
+
+</html>
